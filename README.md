@@ -1,2 +1,20 @@
-# arduino-control-system-for-chorizos
-This is a project in wich i developed a control system for the chorizo's drie process. It has temperature and humedity control directly connected with relays to mantain the enviroment good. It has 2 timers connected to two other relays. Everrthing could be seted up from the same device throuh the screen and bottons.
+# CHORIZOMETRO CONTROLLER V1.
+
+This is a personal project to create a humedity and temperature controller for argentinian chorizo preparation.
+
+# Werhe to run the project
+
+The project was thought to be used in a arduino UNO.
+The electronic components used were:
+
+- Shield de Keypad + Pantalla LCD 16x2
+- DHT 22
+- 4 Relays module
+
+# MAIN FUNCTIONs
+
+It will control the temperature and the humedity via two values.
+The value and the variation.
+If the meassured value is less than value-var, one relay will be put on to do some action in real world to increment the value.
+So we will use cold/hit to control temperature.
+And air/hum to control humidity.
