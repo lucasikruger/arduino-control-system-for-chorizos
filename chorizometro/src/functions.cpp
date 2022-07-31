@@ -73,7 +73,7 @@ void setRelays(int temp, int valTemp, int varTemp, int hum, int valHum, int varH
   if (hum >= (valHum - varHum) && hum <= (valHum + varHum)) // in range
   {
 
-    if (!overFlowStateTemp)
+    if (!overFlowStateHum)
     {
       digitalWrite(relay[2], HIGH);
       digitalWrite(relay[3], HIGH);
