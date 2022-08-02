@@ -1,22 +1,21 @@
 # CHORIZOMETRO CONTROLLER V1.
 
-This is a personal project to create a humedity and temperature controller for argentinian chorizo preparation.
+This personal project is to create a humidity and temperature controller for Argentinian chorizo preparation.# Where to run the project
 
-# Werhe to run the project
-
-The project was thought to be used in a arduino UNO.
+The project was thought to be used in an Arduino UNO.
 The electronic components used were:
 
-- Shield de Keypad + Pantalla LCD 16x2
+- Shield with Keypad + Pantalla LCD 16x2
 - DHT 22
 - 4 Relays module
 
 # MAIN FUNCTIONs
 
-It will control the temperature and the humedity via two values.
+It will control the temperature and the humidity via two values.
 The value and the variation.
-If the meassured value is less than value-var, one relay will be put on to do some action in real world to increment the value.
-So we will use cold/hit to control temperature.
-And air/hum to control humidity.
+The variation avoids that the relay turns on/off all the time.
+For example: Temp: 20 Var: 5 Actual Temp: 30
+The relay for the cold unit is activated up to Actual Temp: 20. It starts again when Actual Temp > Temp+Var. 
+We will use cold/heat to control temperature and air/steam to control humidity.
 
 ![alt text](https://github.com/lucasikruger/arduino-control-system-for-chorizos/blob/main/chorizometro.jpeg?raw=true)
